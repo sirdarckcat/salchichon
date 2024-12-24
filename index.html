@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Perrito Salchich&oacute;n</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        canvas {
+            width: 100vw;
+            height: 100vh;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            font-family: 'Arial Rounded MT Bold', 'Arial', sans-serif;
+            font-size: 18px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            background: linear-gradient(to bottom, #FFB6C1, #FF69B4);
+            color: white;
+            box-shadow: 0 4px 0 #DB7093,
+                       0 5px 5px rgba(0, 0, 0, 0.2);
+            transition: all 0.1s ease;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+            outline: none;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 0 #DB7093,
+                       0 7px 7px rgba(0, 0, 0, 0.2);
+        }
+
+        button:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 #DB7093,
+                       0 3px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        button:nth-child(1) {
+            background: linear-gradient(to bottom, #98FB98, #32CD32);
+            box-shadow: 0 4px 0 #228B22,
+                       0 5px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        button:nth-child(1):hover {
+            box-shadow: 0 6px 0 #228B22,
+                       0 7px 7px rgba(0, 0, 0, 0.2);
+        }
+
+        button:nth-child(1):active {
+            box-shadow: 0 2px 0 #228B22,
+                       0 3px 3px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <canvas></canvas>
+    <script src="index.js"></script>
+</body>
+</html>
